@@ -1,0 +1,214 @@
+<!--File name: projects.ejs
+Student Name: Miha Morales
+Student ID: 301297007
+Date: 4/10/2023-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Projects</title>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+<header>
+    <img src="img/logo.png" alt="logo" style="width: 250px; height: 150px;border-radius: 50px;margin-top: 20px" class="center">
+  </header>
+<body>
+     <!--header-->
+    <%- include('partials/header') %>
+
+     <!--content-->
+    <section class="section">
+        <div class="container">
+            <h2>Portfolio</h2>
+            
+            <div class="project">
+                <div class="project-image">
+                <img src="img/project1.png" alt="Project 1" style="width: 700px;">
+            </div>
+                <div class="project-info">
+                <p>Photo Gallery Website done with HTML and CSS.
+                    This website showcases a collection of captivating photographs, beautifully organized into albums, with sleek and responsive design elements that ensure an enjoyable browsing experience for users of all devices.
+                </p>
+                </div>
+            </div>
+            
+            <div class="project">
+                <div class="project-image">
+                <img src="img/project2.png" alt="Project 2" style="width: 700px;">
+            </div>
+                <div class="project-info">
+                <p>Collaborated for the creation of a Game Cafe Database.
+                    I collaborated with a team for the creation of a Game Cafe Database, which serves as a comprehensive and user-friendly platform for gamers and cafe enthusiasts. 
+                    This database features a wide array of costumer data, service availability, usage logs, and employees, making it easier for people to organize the stablishment
+                </p>
+                </div>
+            </div>
+            
+            <div class="project">
+                <div class="project-image">
+                <img src="img/project3.png" alt="Project 3" style="width: 700px;">
+            </div>
+                <div class="project-info">
+                <p>Collaborated for the planning SRS document for a mobile app that provides information to tourists in Canada.
+                    I collaborated with a dedicated team to plan the Software Requirement Specification (SRS) document for a mobile app aimed at providing valuable information to tourists exploring Canada. 
+                    This comprehensive document outlines the app's functionalities, user interface, performance expectations, and data sources, ensuring that it will offer tourists an engaging and informative experience, helping them make the most of their visit to this beautiful country.
+                </p>
+                </div>
+            </div>
+        </div>
+    </section>
+<style>
+/*image*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/*project and images*/
+.project {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin: 20px;
+    margin-bottom: 30px;
+}
+.project img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 4px;
+ 
+}
+.project-info {
+    flex: 1;
+    font-family: "verdana";
+    margin: 2ch;
+    background-color: rgb(64, 64, 64);
+    border-radius: 4px;
+    padding: 20px; 
+    box-sizing: border-box; 
+    text-align: justify;
+}
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #320707;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #4070f4;
+}
+/*body*/
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Poppins;
+    color:#fff;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+}
+/*navigation bar*/
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1px 0;
+    flex: 1;
+    margin-top: 2ch;
+    background-color: rgb(60, 60, 60);
+    border-radius: 2px;
+    padding: 30px; 
+    box-sizing: border-box;
+    width: 100%;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.navbar a.logo img {
+    width: 100px; 
+    height: auto;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #ea1518; 
+}
+/*hero and section*/
+.hero {
+    background-image: url('hero-background.jpg'); 
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: black;
+}
+.hero p {
+    font-size: 18px;
+    color:black;
+}
+.section {
+    padding: 60px 0;
+}
+.section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+/*button*/
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn:hover {
+    background-color: #ea1518; 
+}
+/*footer*/
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+</style>
+    <!--Footer-->
+    <%- include('partials/footer') %>
+</body>
+</html>

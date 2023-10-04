@@ -1,0 +1,172 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  .homeText{
+      flex: 1;
+      font-family: "verdana";
+      margin: 7ch;
+      margin-top: 0%;
+      background-color: rgb(149, 149, 149);
+      border-radius: 4px;
+      padding: 20px; /* Adjust padding to extend background and border */
+      box-sizing: border-box; /* Include padding in the element's total width */
+  }
+  .hero img {
+      display: block;
+      margin: 20px auto; /* Adjust the margin as needed */
+  }
+  img.logo{ 
+              position:absolute;
+              left: 0px;
+              top: 0px;
+              z-index: -1;
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: 100% 100%;
+              
+  
+          }
+  ::-webkit-scrollbar {
+      width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+      background: #6e93f7;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+      background: #4070f4;
+  }
+  body, h1, h2, p, ul, li, a {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      text-decoration: none;
+      font-family: Poppins;
+      color:#fff;
+  }
+  
+  /* Set a background color and default font */
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #333;
+  }
+  
+  /* Navigation Bar */
+  .navbar {
+      background-color: #333;
+      color: #fff;
+      padding: 1px 0;
+      flex: 1;
+      margin-top: 2ch;
+      background-color: rgb(60, 60, 60);
+      border-radius: 2px;
+      padding: 30px; /* Adjust padding to extend background and border */
+      box-sizing: border-box;
+      width: 100%;
+  }
+  
+  .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 15px;
+  }
+  
+  .navbar a.logo img {
+      width: 100px; /* Set your logo dimensions */
+      height: auto;
+  }
+  
+  .nav-links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+  }
+  
+  .nav-links li {
+      margin-left: 20px;
+  }
+  
+  .nav-links a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+      color: #ea1518; /* Change color on hover */
+  }
+  
+  /* Hero Section */
+  .hero {
+      background-image: url('hero-background.jpg'); /* Replace with your background image */
+      background-size: cover;
+      color: #fff;
+      text-align: center;
+      padding: 100px 0;
+  }
+  
+  .hero h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: black;
+  }
+  
+  .hero p {
+      font-size: 18px;
+      color:black;
+  }
+  
+  /* Sections */
+  .section {
+      padding: 60px 0;
+  }
+  
+  .section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+  }
+  
+  /* Project Cards */
+  .project {
+      margin-bottom: 30px;
+  }
+  
+  .project img {
+      width: 100%; /* Ensure images are responsive */
+      height: auto;
+  }
+  
+  /* Buttons */
+  .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 20px;
+  }
+  
+  .btn:hover {
+      background-color: #ea1518; /* Change color on hover */
+  }
+  
+  /* Footer */
+  footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+  }

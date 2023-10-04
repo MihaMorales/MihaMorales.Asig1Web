@@ -1,0 +1,210 @@
+<!--File name: About.ejs
+Student Name: Miha Morales
+Student ID: 301297007
+Date: 4/10/2023-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@100&display=swap" rel="stylesheet">
+</head>
+<header>
+  <img src="img/logo.png" alt="logo" style="width: 250px; height: 150px; border-radius: 50px;margin-top: 20px" class="center">
+</header>
+<body>
+     <!--header-->
+    <%- include('partials/header') %>
+   
+     <!--content-->
+    <section class="about" id="about">
+        <div class="content">
+          <div class="title"><span>About Me</span></div>
+          <div class="about-details">
+            <div class="left">
+              <img src="img/personalphoto.png" alt="personalphoto" style="width: 400px; height: 500px"/>
+            </div>
+            <div class="right">
+              <div class="topic">Miha Morales Guibovich</div>
+              <p>
+                First year college student adept at utilizing various research methodologies, with strong communication and analytical skills for the development of effective computer programs.
+              </p>
+              <div class="button">
+                <button onclick="location.href='documents/Miha Morales - Resume.pdf';">Download Resume</button>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+<style>
+/*image*/
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #320707;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #320303;
+}
+/*body*/
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: Poppins;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+}
+/*navigation bar*/
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 1px 0;
+    flex: 1;
+    margin-top: 2ch;
+    background-color: rgb(60, 60, 60);
+    border-radius: 2px;
+    padding: 30px; 
+    box-sizing: border-box;
+    width: 100%;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.nav-links li {
+    margin-left: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+.nav-links a:hover {
+    color: #ea1518; 
+}
+/*footer*/
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+/*section and about*/
+section .content{
+  width: 80%;
+  margin: 40px auto;
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-details{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section .title{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+section .title span{
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+section .title span::before,
+section .title span::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #ffffff;
+  left: 0;
+  bottom: 0;
+  
+}
+section .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.about .about-details .left{
+  width: 45%;
+}
+.about .left img{
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.about-details .right{
+  width: 55%;
+}
+section  .topic{
+  color: #ffffff;
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.about-details .right p{
+  text-align: justify;
+  color: #ffffff;
+}
+/*button*/
+section .button{
+  margin: 16px 0;
+}
+section .button button{
+  outline: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 25px;
+  font-weight: 400;
+  background: #6c080a;
+  color: #fff;
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+section .button button:hover{
+  border-color: #ea1518;
+  background-color: #ea1518;
+  color: #ffffff;
+}
+
+</style>
+ <!--Footer-->
+    <%- include('partials/footer') %>
+</body>
+</html>
